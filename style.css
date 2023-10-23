@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("https://images.unsplash.com/photo-1619043599439-9b750b7b2623?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* alinha na horizontal*/
+    align-items: center; /*Alinha na vertical*/
+    min-height: 100vh; /*Obriga o tamanho da tela ocupar por igual */
+}
+
+.container{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex; /*Coloca o display como flex*/
+    flex-direction:column; /*precisa-se colocar em qual sentido deseja alinhar o display*/
+    align-items: center; /*Para alinhar na horizontal*/
+    justify-content: center; /*Para alinhar na vertical*/
+}
+
+button{
+    padding: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out;
+}
+.buttons{
+    margin: 30px 0;
+    display: flex;
+    gap: 40px; /*Coloca uma distancia entre os itens, mas para que possa ser usado o gap, precisa estar com o display flex*/
+}
+
+#pedra{
+    background-color: #cc2f2f93;
+}
+
+#papel{
+    background-color: #3e3cbe96;
+}
+
+#tesoura{
+    background-color: #7bca148a;
+}
+button:hover{
+    opacity: .8;
+}
+
+button:active{
+    opacity: .6;
+}
+
+p{
+    font-weight: bold;
+    margin-bottom: 10pxss;
+}
+
+.sua-pontuacao span{
+    color: #f50ef5;
+}
+
+.pontuacao-maquina span{
+    color: #46da0c;
+}

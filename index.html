@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokenPoww</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Joken Poww</h1>
+
+        <div class="buttons">
+        <button id="pedra" onclick="humanoClicou('pedra')">&#129308</button>
+        <button id="papel" onclick="humanoClicou('papel')">&#x1F91A</button>
+        <button id="tesoura" onclick="humanoClicou('tesoura')">&#9996</button>
+        </div>
+        <p class="resultado"></p>
+
+        <p class="sua-pontuacao">Sua pontuação : <span id="my-score">0</span></p>
+        <p class="pontuacao-maquina">Pontuação da BIA : <span id="score-maquina">0</span></p>
+        <p class="empate">Total Empate : <span id="score-empate">0</span></p>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
